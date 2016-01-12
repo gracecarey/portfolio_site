@@ -1,10 +1,16 @@
-<section>
-    <h2><%=_("Welcome to my site!")%></h2>
-</section>
-<section>
-  <ul>
+<div class="hero">
+  <div class="hero-inner">
+    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+" alt="Logo Image"></a>
+    <div class="hero-copy">
+      <p><%=_("Welcome to my site!")%></p>
+    </div>
+  </div>
+</div>
+
+<ul class="portfolio-item-grid">
   <% for(var i=0; i<portfolio_items.length; i++) {%>
-    <li>
+    <li class="block">
       <a href="/portfolio/<%= portfolio_items[i].slug %>">
         <img src="/images/<%= portfolio_items[i].thumb_url %>"
           alt="<%=portfolio_items[i].title%>"/>
@@ -12,5 +18,4 @@
       </a>
     </li>
   <% } %>
-  </ul>
-</section>
+</ul>

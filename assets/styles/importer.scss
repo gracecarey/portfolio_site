@@ -2,6 +2,8 @@
 
 // Uncomment to see grid:
 // $visual-grid: true !global;
-
-@import "base/base";
+// Neat Settings -- uncomment if using Neat -- must be imported before Neat
+@import "neat-helpers";
+@import "base/grid-settings";
 @import "neat";
+@import "base/base";
