@@ -35,5 +35,7 @@
     "url": "git://github.com/grace/project.git"
   },
   "author": "grace",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+  }
 }
