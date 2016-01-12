@@ -19,6 +19,7 @@
  * For more information on configuring custom routes, check out:
  * http://sailsjs.org/#!/documentation/concepts/Routes/RouteTargetSyntax.html
  */
+var portfolio_items = require('../data/static/portfolio_items');
 
 module.exports.routes = {
 
@@ -32,10 +33,21 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
+  '/': function(req, res){
+    return res.view('homepage', {
+      portfolio_items: portfolio_items
+    });
+  },
+  '/portfolio': function(req, res){
+    return res.redirect('/');
+  },
+  '/portfolio/:slug': function(req, res){
+    return res.view('portfolio_item', {
+      portfolio_item: _.find(portfolio_items, function(portfolio_item){
+        return portfolio_item.slug == req.param('slug')
+      })
+    });
   }
-
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

@@ -1,3 +1,16 @@
 <section>
-    <%=_("Welcome to my site!")%>
+    <h2><%=_("Welcome to my site!")%></h2>
+</section>
+<section>
+  <ul>
+  <% for(var i=0; i<portfolio_items.length; i++) {%>
+    <li>
+      <a href="/portfolio/<%= portfolio_items[i].slug %>">
+        <img src="/images/<%= portfolio_items[i].thumb_url %>"
+          alt="<%=portfolio_items[i].title%>"/>
+        <div><%= portfolio_items[i].title %></div>
+      </a>
+    </li>
+  <% } %>
+  </ul>
 </section>
