@@ -2,22 +2,12 @@
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE;
-  $hero-background-bottom: #20392B;
-  $hero-color: white;
   $gradient-angle: 10deg;
 
-  @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background-color: #324766;
+  background-color: $green-blue;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
-
-  .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
-  }
 
   .hero-inner {
     @include outer-container;
@@ -28,25 +18,55 @@
 
     .hero-copy {
       text-align: center;
-
-      h1 {
-        color: $hero-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
+      hr {
+        border-bottom: 2px solid $off-white;
       }
-
+      h1, p{
+        text-transform: uppercase;
+      }
+      h1 {
+        color: $brown;
+        @include ostrich-sans-inline();
+        font-size: 6em;
+        line-height: .8em;
+        margin-bottom: .2em;
+      }
       p {
-        color: $hero-color;
-        line-height: 1.4em;
-        margin: 0 auto 3em auto;
-
+        @include archivo-narrow();
+        margin: 0 auto;
+        font-size: 1.5em;
+        line-height: 1.25em;
+        color: $brown;
         @include media($large-screen) {
           font-size: 1.1em;
-          max-width: 40%;
+          max-width: 80%;
+        }
+        >.emphasis{
+          color: darken($green-blue, 40%);
+        }
+        &.horizontal-decor{
+          color: $off-white;
+          overflow: hidden;
+          text-align: center;
+          margin-bottom: .5em;
+          &:before,
+          &:after {
+              background-color: $off-white;
+              content: "";
+              display: inline-block;
+              height: 2px;
+              position: relative;
+              vertical-align: middle;
+              width: 50%;
+          }
+          &:before {
+              right: 0.5em;
+              margin-left: -50%;
+          }
+          &:after {
+              left: 0.5em;
+              margin-right: -50%;
+          }
         }
       }
     }
