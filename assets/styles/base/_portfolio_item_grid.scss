@@ -1,21 +1,22 @@
 .portfolio-item-grid{
   @include outer-container;
+  padding: $padding;
   > li{
     @include span-columns(12);
-    @include media($large-screen-up) {
-      @include span-columns(3);
-      @include omega(4n);
+    padding: 1%;
+    @include media($small-screen) {
+      @include span-columns(6);
+      @include omega(2n);
     }
     @include media($medium-screen) {
       @include span-columns(4);
       @include omega(3n);
     }
-    > a {
-      width: 100%;
-      display: block;
-      > img {
-        width: 100%;
-      }
+    @include media($medium-screen-up){
+    }
+    @include media($large-screen-up) {
+      @include span-columns(3);
+      @include omega(4n);
     }
   }
 }

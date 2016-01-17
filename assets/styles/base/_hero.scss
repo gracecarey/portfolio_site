@@ -1,6 +1,5 @@
 .hero {
   $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
   $large-screen: em(860) !default;
   $gradient-angle: 10deg;
 
@@ -8,12 +7,12 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-
+  box-shadow: 0 0px 2px darken($green-blue, 10%);
   .hero-inner {
     @include outer-container;
     @include clearfix;
     margin: auto;
-    padding: 3.5em;
+    padding: $padding-lg;
     text-align: center;
 
     .hero-copy {
@@ -32,17 +31,17 @@
         margin-bottom: .2em;
       }
       p {
-        @include archivo-narrow();
+        @include bebas-neue();
         margin: 0 auto;
-        font-size: 1.5em;
-        line-height: 1.25em;
-        color: $brown;
+        font-size: 1.4em;
+        line-height: 1.1em;
+        color: darken($blue-gray, 20%);
         @include media($large-screen) {
           font-size: 1.1em;
           max-width: 80%;
         }
         >.emphasis{
-          color: darken($green-blue, 40%);
+          color: darken($blue-gray, 25%);
         }
         &.horizontal-decor{
           color: $off-white;

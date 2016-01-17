@@ -1,23 +1,4 @@
 module.exports = [{
-    "title": "Game design",
-    "client": "Brain-Grow",
-    "year": 2010,
-    "slug": "game-design",
-    "description": "I created the design elements and branding for an children's educational iPhone app called \"What Does Not Belong,\" produced by Brain-Grow.  Elements had to be both visually appealing and functional.",
-    "thumb_url": "iphone_game_thumb.png",
-    "image_urls": [
-        "iphone_game_icon.png",
-        "iphone_game_menu.png",
-        "iphone_game_question.png"
-    ],
-    "work_types": [
-        "Graphic design"
-    ],
-    "tools": [
-        "Illustrator",
-        "Photoshop"
-    ]
-}, {
     "title": "Geolocation game admin",
     "agency": "G2",
     "agency_url": null,
@@ -80,7 +61,7 @@ module.exports = [{
         "fundraiser.png"
     ]
 },{
-    "title": "Job candidate recruitment websites (multiple)",
+    "title": "Job candidate recruitment",
     "slug": "job-candidate-recruitment",
     "agency": "TMP Worldwide",
     "agency_url": "http://www.tmp.com/",
@@ -99,7 +80,7 @@ module.exports = [{
         "job_candidate.jpg"
     ]
 },{
-    "title": "Internal company admin",
+    "title": "Admin tools",
     "agency": "VaynerMedia",
     "slug": "internal-company-admin",
     "year": 2016,
@@ -123,7 +104,7 @@ module.exports = [{
         "Browserify"
     ]
 }, {
-    "title": "Drum Machine",
+    "title": "Drum machine",
     "slug": "internal-company-admin",
     "year": 2011,
     "description": "As a personal project, I built and programmed a simple arduino drumb machine",
