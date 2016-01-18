@@ -1,0 +1,32 @@
+.find-me{
+  margin: 1em 0;
+  > h2 {
+    color: $brown;
+    @include bebas-neue();
+    font-size: 1.4em;
+    line-height: .8em;
+    font-weight: 400;
+  }
+  > ul >li {
+    margin-bottom: 1em;
+    @include roboto();
+    > a{
+      // color: $blue-gray;
+      &:hover{
+        color: darken($blue-gray, 10%);
+      }
+    }
+    > a > i{
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: lighten($blue-gray, 45%);
+      box-shadow: 0 1px 1px lighten($blue-gray, 30%);
+      padding: .35em;
+      & :hover{
+        background-color: lighten($blue-gray, 60%);
+      }
+    }
+  }
+  padding: $padding;
+  text-align: center;
+}

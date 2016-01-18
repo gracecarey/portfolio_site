@@ -19,6 +19,7 @@
     <li><a href="https://www.linkedin.com/in/grace-carey-55ba4a55"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
     <li><a href="https://github.com/gracecarey"><i class="fa fa-github"></i> Github</a></li>
     <li><a href="http://codepen.io/gracecarey/"><i class="fa fa-codepen"></i> Codepen</a></li>
+    <li><a href=""><i class="fa fa-file"></i> Resume [download]</a></li>
   </ul>
 </section>
 
@@ -27,13 +28,10 @@
     <% for(var i=0; i<portfolio_items.length; i++) {%>
     <li>
 <!--    <a href="/portfolio/<%= portfolio_items[i].slug %>" class="image-gradient-dynamic">
- -->    <a href="/portfolio/<%= portfolio_items[i].slug %>" class="image-gradient-dynamic">
+ -->    <a href="/portfolio/<%= portfolio_items[i].slug %>">
             <img src="/images/<%= portfolio_items[i].thumb_url %>"
             alt="<%=portfolio_items[i].title%>">
-            <div class="overlay"></div>
-            <div class="copy">
-              <p><%= portfolio_items[i].title %></p>
-            </div>
+            <p><%= portfolio_items[i].title %></p>
         </a>
     </li>
     <% } %>
