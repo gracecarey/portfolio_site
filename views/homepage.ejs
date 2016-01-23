@@ -1,8 +1,8 @@
-<div class="hero">
+<header class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
       <h1><%=_("Grace Carey") %></h1>
-      <p class="horizontal-decor"><i class="fa fa-cogs"></i></p>
+      <p class="horizontal-decor-white"><i class="fa fa-cogs"></i></p>
       <p>
         <span><%=_("I'm a creative ")%></span>
         <span class="emphasis"><%=_("full-stack web developer ")%></span>
@@ -11,27 +11,22 @@
       <p><%=_("This is a place for me to showcase some of my work.")%></p>
     </div>
   </div>
-</div>
-
-<section class="find-me">
-  <h2>Find me</h2>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/grace-carey-55ba4a55"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-    <li><a href="https://github.com/gracecarey"><i class="fa fa-github"></i> Github</a></li>
-    <li><a href="http://codepen.io/gracecarey/"><i class="fa fa-codepen"></i> Codepen</a></li>
-    <li><a href=""><i class="fa fa-file"></i> Resume [download]</a></li>
-  </ul>
-</section>
+</header>
 
 <section>
+  <h3 class="title-horizontal-decor">My work</h3>
   <ul class="portfolio-item-grid">
     <% for(var i=0; i<portfolio_items.length; i++) {%>
     <li>
 <!--    <a href="/portfolio/<%= portfolio_items[i].slug %>" class="image-gradient-dynamic">
- -->    <a href="/portfolio/<%= portfolio_items[i].slug %>">
-            <img src="/images/<%= portfolio_items[i].thumb_url %>"
-            alt="<%=portfolio_items[i].title%>">
-            <p><%= portfolio_items[i].title %></p>
+ -->    <a href="/portfolio/<%= portfolio_items[i].slug %>" class="panel">
+            <div class="img-container">
+              <img src="/images/<%= portfolio_items[i].thumb_url %>"
+              alt="<%=portfolio_items[i].title%>">
+            </div>
+            <div class="centered-text-container">
+              <p class="centered-text"><%= portfolio_items[i].title %></p>
+            </div>
         </a>
     </li>
     <% } %>

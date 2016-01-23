@@ -5,6 +5,7 @@
 
 @import "variables";
 
+@import "mixins";
 @import "normalize";
 @import "buttons";
 @import "forms";
@@ -15,5 +16,9 @@
 @import "hero";
 @import "portfolio_item_grid";
 @import "find-me";
-@import "image-gradient-overlays"
+@import "portfolio_item";
+@import "layout";
 
+.horizontal-decor-white{
+  @include horizontal-decor($off-white)
+}

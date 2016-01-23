@@ -1,3 +1,203 @@
 body{
   background-color: $off-white;
+  > header {
+    background-color: $green-blue;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0px 2px darken($green-blue, 10%);
+  }
+  > section {
+    @include outer-container;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+.title-horizontal-decor{
+  @include title-horizontal-decor();
+}
+
+
+.breadcrumb {
+  @include outer-container;
+  margin-top: .5em;
+  padding-top: 1em;
+  margin-bottom: 1em;
+  padding-left: $padding;
+  padding-right: $padding;
+  > li {
+    display: inline-block;
+    @include title(lighten($blue-gray, 10%));
+    position: relative;
+    &:not(:last-child){
+      &:after{
+        font-size: 1em;
+        color: lighten($blue-gray, 15%);
+        content: ">";
+        padding: 0 .25em;
+        right: 0px;
+        position: relative;
+      }
+    }
+  }
+}
+
+$badge-font-size: 0.75em !default;
+$medium-gray: #999 !default;
+$alert-color: #fff6bf !default;
+$error-color: #fbe3e4 !default;
+$notice-color: #e5edf8 !default;
+$success-color: #e6efc2 !default;
+
+@mixin badge($color: $medium-gray) {
+  background-color: $color;
+  border-radius: $badge-font-size * 5;
+  color: darken($color, 60%);
+  display: inline-block;
+  font-size: $badge-font-size;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.badge {
+  @include badge;
+}
+
+.badge-tools {
+  @include badge(lighten($rose, 10%));
+}
+
+.badge-type {
+  @include badge($light-blue);
+}
+
+.footer {
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  // $footer-background: desaturate(darken($action-color, 20%), 30%);
+  $footer-background: desaturate(darken($blue-gray, 5%), 5%);
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.4);
+  $footer-disclaimer-color: transparentize($footer-color, 0.4);
+
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  .footer-logo {
+    margin-bottom: 2em;
+    text-align: center;
+
+    img {
+      height: 3em;
+    }
+  }
+
+  .footer-links {
+    @include display(flex);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    margin-bottom: $base-spacing;
+  }
+
+  ul {
+    @include flex-basis(13em);
+    @include flex-shrink(0);
+    margin-bottom: $base-spacing * 2;
+    padding: 0;
+  }
+
+  li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  li a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  li h3 {
+    @include bebas-neue();
+    color: $footer-color;
+    margin-bottom: 0.4em;
+  }
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    margin: 0 auto $base-spacing;
+    width: 12em;
+  }
+
+  p {
+    color: $footer-disclaimer-color;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+  }
+}
+
+.icon-circle{
+  color: darken($blue-gray, 1%);
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: lighten($blue-gray, 35%);
+  box-shadow: 0 1px 1px $blue-gray;
+  padding: .35em;
+}
+
+a > .icon-circle{
+  &:hover {
+    background-color: $white;
+  }
+}
+.panel{
+  background-color: $white;
+  padding: $padding;
+  background: lighten($off-white, 10%);
+  box-shadow: 0 0px 3px darken($off-white, 15%);
+  border-radius: 5px;
+  display:block;
+  // margin-bottom: 1em;
+  img{
+    display: block;
+  }
+  .img-container{
+    position: relative;
+    &:after{
+      @include pseudo();
+      box-shadow: inset 0 0px 10px transparentize($blue-gray, .5);
+    }
+  }
+  & a{
+
+  }
+}
+.centered-text-container{
+  position:relative;
+  display: block;
+  text-align: center;
+  height: 3em;
+  .centered-text{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    & p {
+      margin: 0;
+    }
+  }
 }

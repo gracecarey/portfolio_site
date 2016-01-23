@@ -1,9 +1,54 @@
-<header class="navigation" role="banner">
-  <div class="navigation-wrapper">
+<header>
     <a href="/">
-      <h1><%=_("Grace Carey") %></h1></a>
-  </div>
+      <h1><%=_("Grace Carey") %></h1>
+    </a>
 </header>
-<section>
-    <%=portfolio_item.title%>
+
+<ul class="breadcrumb">
+  <li><a href="/">
+    <i class="fa fa-home"></i> Home</a>
+  </li>
+  <li>
+    Portfolio
+  </li>
+</ul>
+
+<section class="portfolio-item">
+  <h2 class="portfolio-item-title"><%= portfolio_item.title %></h2>
+  <div class="portfolio-item-meta panel">
+    <p class="portfolio-item-description"><%=portfolio_item.description%></p>
+    <hr />
+    <section>
+      <h3>Role</h3>
+      <ul class="portfolio-item-work-types">
+        <% for(var i=0; i<portfolio_item.work_types.length; i++) {%>
+        <li class="badge-type"><%= portfolio_item.work_types[i] %></li>
+        <% } %>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Tools</h3>
+      <ul class="portfolio-item-tools">
+        <% for(var i=0; i<portfolio_item.tools.length; i++) {%>
+        <li class="badge-tools"><%= portfolio_item.tools[i] %></li>
+        <% } %>
+      </ul>
+    </section>
+  </div>
+  <ul class="portfolio-item-images">
+    <% for(var i=0; i<portfolio_item.image_urls.length; i++) {%>
+    <li class="panel">
+      <div class="img-container">
+        <img src="/images/<%= portfolio_item.image_urls[i] %>"
+        alt="<%= portfolio_item.image_urls[i] %>">
+      </div>
+    </li>
+    <% } %>
+  </ul>
+  <% if (portfolio_item.youtube_url) { %>
+    <div class="youtube-embed">
+      <iframe width="420" height="315" src="<%= portfolio_item.youtube_url %>" frameborder="0" allowfullscreen></iframe>
+    </div>
+  <% } %>
 </section>

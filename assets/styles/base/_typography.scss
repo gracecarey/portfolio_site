@@ -1,33 +1,3 @@
-@include font-face("Ostrich Sans", "../fonts/ostrich-sans-medium", $file-formats: woff ttf svg eot);
-@include font-face("Ostrich Sans Inline", "../fonts/ostrich-sans-inline-regular", $file-formats: woff ttf svg eot);
-@include font-face("League Gothic", "../fonts/leaguegothic-regular-webfont", $file-formats: woff ttf svg eot);
-@include font-face("Bebase Neue", "../fonts/BebasNeue_Regular", $file-formats: woff ttf svg eot);
-@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-
-@mixin ostrich-sans() {
-  font-family: 'Ostrich Sans', sans-serif;
-}
-@mixin ostrich-sans-inline() {
-  font-family: 'Ostrich Sans Inline', sans-serif;
-  font-weight: 300;
-}
-@mixin league-gothic() {
-  font-family: 'League Gothic', sans-serif;
-  font-weight: 200;
-}
-@mixin archivo-narrow() {
-  font-family: 'Archivo Narrow', sans-serif;
-}
-@mixin bebas-neue(){
-  font-family: 'Bebas Neue', sans-serif;
-}
-
-@mixin roboto(){
-  font-family: 'Roboto', sans-serif;
-}
-
-
 body {
   color: $base-font-color;
   font-size: $base-font-size;
@@ -44,7 +14,16 @@ h6 {
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
-
+h1 {
+  color: $brown;
+  @include ostrich-sans-inline();
+  font-size: 4em;
+  line-height: .8em;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 p {
   margin: 0 0 $small-spacing;
 }
@@ -73,4 +52,8 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+.title{
+  @include title($brown);
 }

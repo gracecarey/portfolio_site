@@ -1,12 +1,5 @@
 .find-me{
   margin: 1em 0;
-  > h2 {
-    color: $brown;
-    @include bebas-neue();
-    font-size: 1.4em;
-    line-height: .8em;
-    font-weight: 400;
-  }
   > ul >li {
     margin-bottom: 1em;
     @include roboto();
