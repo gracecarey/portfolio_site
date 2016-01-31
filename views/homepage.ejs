@@ -15,20 +15,19 @@
 
 <section>
   <h3 class="title-horizontal-decor">My work</h3>
-  <ul class="portfolio-item-grid">
+  <ul class="portfolio-grid">
     <% for(var i=0; i<portfolio_items.length; i++) {%>
     <li>
-<!--    <a href="/portfolio/<%= portfolio_items[i].slug %>" class="image-gradient-dynamic">
- -->    <a href="/portfolio/<%= portfolio_items[i].slug %>" class="panel">
-            <div class="img-container">
-              <img src="/images/<%= portfolio_items[i].thumb_url %>"
-              alt="<%=portfolio_items[i].title%>">
-            </div>
-            <div class="centered-text-container">
-              <p class="centered-text"><%= portfolio_items[i].title %></p>
-            </div>
-        </a>
+      <a href="/portfolio/<%= portfolio_items[i].slug %>" class="panel grid-item">
+        <div class="img-container">
+          <img src="/images/<%= portfolio_items[i].thumb_url %>" alt="<%=portfolio_items[i].title%>">
+        </div>
+        <div class="centered-text-container">
+          <p class="centered-text"><%= portfolio_items[i].title %></p>
+        </div>
+      </a>
     </li>
     <% } %>
   </ul>
 </section>
+

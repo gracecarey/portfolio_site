@@ -7,6 +7,8 @@
     @include clearfix;
     margin: auto;
     padding: $padding-lg;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
     text-align: center;
 
     .hero-copy {
