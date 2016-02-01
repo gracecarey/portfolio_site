@@ -11,7 +11,7 @@ body{
     @include outer-container;
     padding-left: $padding-x;
     padding-right: $padding-x;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em;
   }
 }
@@ -28,7 +28,7 @@ body{
   @include outer-container;
   margin-top: .5em;
   padding-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: .2em;
   padding-left: $padding;
   padding-right: $padding;
   > li {

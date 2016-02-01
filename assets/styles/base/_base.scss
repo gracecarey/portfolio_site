@@ -21,4 +21,8 @@
 
 .horizontal-decor-white{
   @include horizontal-decor($off-white)
+  &:after, &:before{
+    top: 2px;
+    background-color: transparentize($off-white, .5);
+  }
 }
