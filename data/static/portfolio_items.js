@@ -1,6 +1,7 @@
 module.exports = [{
     "title": "Admin tools",
-    "agency": "VaynerMedia",
+    "company": "VaynerMedia",
+    "company_url": "http://vaynermedia.com/",
     "slug": "internal-company-admin",
     "year": 2016,
     "description": "I am currently contributing front-end and back-end code to build and maintain a suite of internal company admin tools at a digital agency. The admin suite covers a host of company needs such as budget reporting, team performance and management, employee surveys, and employee hour-logging.",
@@ -25,8 +26,8 @@ module.exports = [{
 },{
     "title": "Job candidate recruitment",
     "slug": "job-candidate-recruitment",
-    "agency": "TMP Worldwide",
-    "agency_url": "http://www.tmp.com/",
+    "company": "TMP Worldwide",
+    "company_url": "https://www.tmp.com/",
     "description": "I provided many clients with front-end code for TMP's job search recruitment web product. Product implementations were based on a boilerplate and tailored to meet the needs of the client.",
     "tools": [
         "CSS",
@@ -43,7 +44,8 @@ module.exports = [{
     ]
 },{
     "title": "Fundraiser web app",
-    "agency": "TMP Worldwide",
+    "company": "TMP Worldwide",
+    "company_url": "https://www.tmp.com/",
     "slug": "fundraiser-web-app",
     "description": "I volunteered to design and build a web app for an internal company initiative to raise money for the JDRF. The site is responsive, using a PHP/Mysql backend to store pledge data. The pledge thermometer widget is built entirely from CSS and custom data binding.",
     "tools": [
@@ -64,7 +66,8 @@ module.exports = [{
     ]
 },{
     "title": "Slideover photo widget",
-    "client": "Elizabeth Arden New York",
+    "company": "Elizabeth Arden New York",
+    "company_url": "http://www.elizabetharden.com/",
     "year": 2013,
     "slug": "slideover-photo-widget",
     "description": "I built a modal dual-layer photo slideover widget in order to help promote an anti-aging cosmetics product.  The widget features a draggable handle that reveals an image overlay as it is pulled left.  I wrote the JQuery module to be flexible, with multiple parameters so that it can be re-purposed later for other uses.",
@@ -81,8 +84,8 @@ module.exports = [{
     ]
 },{
     "title": "Geolocation game admin",
-    "agency": "G2",
-    "agency_url": null,
+    "company": "G2 Worldwide",
+    "company_url": null,
     "year": 2012,
     "slug": "geolocation-game-admin",
     "description": "I was on a team that built a first-person-shooter mobile game for Android and iOS. I helped to build the back-end administrative tool (ASP.NET MVC, C#) that allowed select users to log-in and create live, geolocation-based tournaments.  We used the mobile data stack Parse to store the tournament and user data.  I employed responsive design techniques so that the admin tool and leaderboard would be usable across various devices.",
@@ -105,7 +108,8 @@ module.exports = [{
     ]
 },{
     "title": "Non profit CMS",
-    "agency": "G2",
+    "company": "G2 Worldwide",
+    "company_url": null,
     "slug": "non-profit-cms",
     "description": "This non-profit client required a robust, intuitive CMS that would allow them to easily make content updates. After planning the site architecture and taxonomy, I built this CMS in the PHP-based Wordpress framework. I was provided .psds from which I created custom CSS stylesheets. One of the more complex features on the site is the  Clinical Trials search, which allows the user to filter multiple search results in real-time.  It required organizing a custom content type with complex taxonomy reflecting the multiple optional filters.",
     "tools": [
@@ -127,6 +131,8 @@ module.exports = [{
 },{
     "title": "Comic Book Company",
     "slug": "comic-book-company",
+    "company": "ID Comics",
+    "company_url": "http://idcomics.com/",
     "description": "I developed and designed this website for an independent comic book company.  The client required the ability to update news items, videos, store products, slideshow items, and new comic book releases.  Features integration with Graphic.ly, an online comic-book browser, an online store, a jQuery slideshow, and a Twitter feed.",
     "tools": [
         "Drupal",

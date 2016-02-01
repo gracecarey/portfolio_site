@@ -14,26 +14,42 @@
 </ul>
 
 <section class="portfolio-item">
-  <h2 class="portfolio-item-title"><%= portfolio_item.title %></h2>
   <div class="portfolio-item-meta panel">
-    <p class="portfolio-item-description"><%=portfolio_item.description%></p>
-    <hr />
+    <h2 class="portfolio-item-title"><%= portfolio_item.title %></h2>
     <section>
-      <h3>Role</h3>
-      <ul class="portfolio-item-work-types">
-        <% for(var i=0; i<portfolio_item.work_types.length; i++) {%>
-        <li class="badge-type"><%= portfolio_item.work_types[i] %></li>
-        <% } %>
-      </ul>
+      <p class="portfolio-item-description"><%=portfolio_item.description%></p>
     </section>
-
     <section>
-      <h3>Tools</h3>
-      <ul class="portfolio-item-tools">
-        <% for(var i=0; i<portfolio_item.tools.length; i++) {%>
-        <li class="badge-tools"><%= portfolio_item.tools[i] %></li>
+      <div>
+        <h3>Role:</h3>
+        <ul class="portfolio-item-work-types">
+          <% for(var i=0; i<portfolio_item.work_types.length; i++) {%>
+          <li class="badge badge-type"><%= portfolio_item.work_types[i] %></li>
+          <% } %>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools:</h3>
+        <ul class="portfolio-item-tools">
+          <% for(var i=0; i<portfolio_item.tools.length; i++) {%>
+          <li class="badge badge-tools"><%= portfolio_item.tools[i] %></li>
+          <% } %>
+        </ul>
+      </div>
+      <% if (portfolio_item.company){ %>
+      <div>
+        <h3>Work for:</h3>
+        <p>
+        <% if (portfolio_item.company_url){ %>
+          <a href="<%= portfolio_item.company_url %>">
+            <span><%= portfolio_item.company %></span>
+          </a>
+        <% } else { %>
+          <span><%= portfolio_item.company %></span>
         <% } %>
-      </ul>
+        </p>
+      </div>
+      <% } %>
     </section>
   </div>
   <ul class="portfolio-item-images">

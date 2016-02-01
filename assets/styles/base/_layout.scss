@@ -5,7 +5,7 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 0px 2px darken($green-blue, 10%);
+    box-shadow: 0 1px 1px darken($green-blue, 25%);
   }
   > section {
     @include outer-container;
@@ -16,6 +16,9 @@ body{
   }
 }
 
+.bg-color-white{
+  background-color: $white;
+}
 .title-horizontal-decor{
   @include title-horizontal-decor();
 }
@@ -102,13 +105,12 @@ $success-color: #e6efc2 !default;
     @include display(flex);
     @include justify-content(center);
     @include flex-wrap(wrap);
-    margin-bottom: $base-spacing;
   }
 
   ul {
     @include flex-basis(13em);
     @include flex-shrink(0);
-    margin-bottom: $base-spacing * 2;
+    margin-bottom: $base-spacing;
     padding: 0;
   }
 

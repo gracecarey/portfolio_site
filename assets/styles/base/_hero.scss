@@ -6,36 +6,34 @@
     @include outer-container;
     @include clearfix;
     margin: auto;
-    padding: $padding-lg;
-    padding-left: $padding-x;
-    padding-right: $padding-x;
+    padding: $padding-x;
     text-align: center;
-
+    h1, p{
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 6em;
+      line-height: .8em;
+      margin-bottom: .05em;
+    }
     .hero-copy {
       text-align: center;
-      hr {
-        border-bottom: 2px solid $off-white;
-      }
-      h1, p{
-        text-transform: uppercase;
-      }
-      h1 {
-        font-size: 6em;
-        line-height: .8em;
-        margin-bottom: .2em;
-      }
+      padding-top: $padding;
       p {
         @include bebas-neue();
         margin: 0 auto;
-        font-size: 1.4em;
+        font-size: 1.5em;
         line-height: 1.1em;
-        color: darken($blue-gray, 20%);
+        color: darken($blue-gray, 5%);
+        padding-bottom: .3em;
         @include media($large-screen) {
           font-size: 1.1em;
           max-width: 80%;
         }
-        >.emphasis{
-          color: darken($blue-gray, 25%);
+        em{
+          color: darken($blue-gray, 20%);
+          font-style: normal;
+          // font-size: 1.16em;
         }
         > i {
           color: $off-white;
