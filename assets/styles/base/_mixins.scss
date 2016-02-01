@@ -4,18 +4,19 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
 @mixin ostrich-sans() {
-  font-family: 'Ostrich Sans', sans-serif;
+  font-family: 'Ostrich Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 @mixin ostrich-sans-inline() {
-  font-family: 'Ostrich Sans Inline', sans-serif;
+  font-family: 'Ostrich Sans Inline', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 @mixin bebas-neue(){
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.4em;
   line-height: 1.35em;
   color: $brown;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 @mixin roboto(){
