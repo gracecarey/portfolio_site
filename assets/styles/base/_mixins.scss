@@ -1,6 +1,6 @@
 @include font-face("Ostrich Sans", "../fonts/ostrich-sans-medium", $file-formats: woff ttf svg eot);
 @include font-face("Ostrich Sans Inline", "../fonts/ostrich-sans-inline-regular", $file-formats: woff ttf svg eot);
-@include font-face("Bebase Neue", "../fonts/BebasNeue_Regular", $file-formats: woff ttf svg eot);
+@include font-face("Bebase Neue", "../fonts/BebasNeueRegular", $file-formats: woff ttf svg eot);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
 @mixin ostrich-sans() {
