@@ -1,13 +1,13 @@
-@include font-face("Ostrich Sans", "../fonts/ostrich-sans-medium", $file-formats: woff ttf svg eot);
+@include font-face("Ostrich Sans Inline", "../fonts/ostrich-sans-inline-regular", $file-formats: woff ttf svg eot);
 @include font-face("Bebas Neue", "../fonts/BebasNeueRegular", $file-formats: woff ttf svg eot);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
-@mixin ostrich-sans() {
-  font-family: 'Ostrich Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@mixin ostrich-sans-inline() {
+  font-family: 'Ostrich Sans Inline', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
-
 @mixin bebas-neue(){
-  font-family: 'Bebas Neue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Bebas Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4em;
   line-height: 1.35em;
   color: $brown;
