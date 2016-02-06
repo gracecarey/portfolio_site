@@ -2,5 +2,4 @@
 
 Features
 * A [Sails](http://sailsjs.org) application
-* Sass with Bourbon, Neat, Bitters, Refills
-* Static JS object for data
+* Custom Sass integration with Bourbon, Neat, Bitters, and Refills
