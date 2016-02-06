@@ -28,7 +28,7 @@ module.exports = [{
     "slug": "job-candidate-recruitment",
     "company": "TMP Worldwide",
     "company_url": "https://www.tmp.com/",
-    "description": "I provided many clients with front-end code for TMP's job search recruitment web product. Product implementations were based on a boilerplate and tailored to meet the needs of the client.",
+    "description": "I provided many clients with front-end code for TMP's job search recruitment web product. Product implementations were based on a boilerplate and custom-tailored to meet the needs of the client.",
     "tools": [
         "CSS",
         "HTML5",
@@ -88,7 +88,7 @@ module.exports = [{
     "company_url": null,
     "year": 2012,
     "slug": "geolocation-game-admin",
-    "description": "I was on a team that built a first-person-shooter mobile game for Android and iOS. I helped to build the back-end administrative tool (ASP.NET MVC, C#) that allowed select users to log-in and create live, geolocation-based tournaments.  We used the mobile data stack Parse to store the tournament and user data.  I employed responsive design techniques so that the admin tool and leaderboard would be usable across various devices.",
+    "description": "I was on a team that built a first-person-shooter mobile game for Android and iOS. I helped to build the back-end administrative tool (ASP.NET MVC, C#) that allowed select users to log-in and create live, geolocation-based tournaments.  We used Parse cloud data service to store and edit the tournament and user data.  I employed responsive design techniques so that the admin tool and leaderboard would be usable across various devices.",
     "tools": [
         "ASP.NET MVC",
         "C#",
@@ -111,7 +111,7 @@ module.exports = [{
     "company": "G2 Worldwide",
     "company_url": null,
     "slug": "non-profit-cms",
-    "description": "This non-profit client required a robust, intuitive CMS that would allow them to easily make content updates. After planning the site architecture and taxonomy, I built this CMS in the PHP-based Wordpress framework. I was provided .psds from which I created custom CSS stylesheets. One of the more complex features on the site is the  Clinical Trials search, which allows the user to filter multiple search results in real-time.  It required organizing a custom content type with complex taxonomy reflecting the multiple optional filters.",
+    "description": "This non-profit client required a robust, intuitive CMS that would allow them to easily make content updates. After planning the site architecture and taxonomy, I built this CMS in the PHP-based Wordpress framework. One of the more complex features on the site is a  Clinical Trials search, which allows the user to filter multiple search results. This feature required organizing a custom content type with complex taxonomy categorized by the multiple optional filters.",
     "tools": [
         "PHP",
         "Wordpress",
@@ -155,7 +155,7 @@ module.exports = [{
     "title": "Drum machine",
     "slug": "drum-machine",
     "year": 2011,
-    "description": "As a personal project, I built and programmed a toy arduino drum machine",
+    "description": "As a personal project, I programmed and built a toy arduino drum machine, including controls for volume and pitch.",
     "thumb_url": "drummachine_thumb.png",
     "image_urls": [
     ],

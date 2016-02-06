@@ -24,10 +24,7 @@
         max-width:300px;
       }
       @include media($medium-screen-up) {
-        max-width:280;
-      }
-      @include media($large-screen-up) {
-        max-width:240px;
+        max-width:280px;
       }
       margin-left: auto;
       margin-right: auto;
